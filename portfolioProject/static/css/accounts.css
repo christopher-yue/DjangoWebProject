@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF8C00
+}
+
+.container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container .forms {
+    padding: 30px;
+}
+
+.container .forms .title {
+    position: relative;
+    font-size:27px;
+    font-weight: 600;
+}
+
+.form .input-field {
+    background-color: white;
+    position: relative;
+    height: 50px;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.input-field input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 20px;
+}
+
+.input-field i.icon {
+    left: 0;
+}
+
+.list{
+    position: relative;
+    font-size: 12px;
+    padding: 0 0 0 35px;
+}
+
+.input-field i.showHidePw {
+    right: 0;
+}
+
+.form .checkbox-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input {
+    margin: 0 8px 0 2px;
+    accent-color: #1a89c8;
+}
+
+.form .text {
+    color: #333;
+    font-size: 14px;
+}
+
+.form a.text {
+    color: #1a89c8;
+    text-decoration: none;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form .button {
+    margin-top: 20px;
+}
+
+.form .button input{
+    border: none;
+    font-size: 17px;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #FF8C00;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #b76500
+}
+
+.form .login-signup {
+    margin-top: 30px;
+    text-align: center;
+}

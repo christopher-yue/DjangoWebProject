@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+:root {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    --text-primary: #fff;
+    --text-secondary: #ff8c00;
+    --background-primary: #222;
+    --background-secondary: #000;
+    --transition-speed: 500ms;
+}
+
+body {
+    color: var(--text-primary);
+    background-color: var(--background-primary);
+    margin: 0;
+    padding: 0;
+}
+
+body::-webkit-scrollbar {
+    width: 0.3rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: var(--background-primary);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #ff8c00;
+}
+
+main {
+    margin-left: 16rem;
+    padding: 1rem;
+    color: var(--text-primary);
+    background-color: var(--background-primary);
+    height: 100vh;
+}
+
+.navbar {
+    position: fixed;
+    background-color: var(--background-secondary);
+    transition: 200ms ease;
+    top: 0;
+    width: 16rem;
+    height: 100vh;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    font-weight: 700;
+}
+
+.nav-item {
+    width: 100%;
+}
+
+.sidenav .nav-link {
+    display: flex;
+    align-items: center;
+    height: 3rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: var(--transition-speed);
+}
+
+.sidenav .nav-link i{
+    min-width: 2rem;
+    margin: 0 1.5rem;
+    font-size: 28px;
+}
+
+.sidenav .nav-link:hover {
+    background: var(--background-primary);
+}
+
+.sidenav .logo {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-left: -5.5rem;
+}
+
+/* --------- */
+.button-nav {
+    position: fixed;
+    right: 10px;
+}
+
+.button-nav .menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #333;
+    font-weight: 500;
+}
+
+.profile-button {
+    padding: 0.2rem 0;
+    margin: 1rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: var(--background-secondary);
+    color: var(--text-primary);
+    cursor: pointer;
+}
+
+.profile-button img {
+    height: 25px;
+    width: 25px;
+    padding-left: 3px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.profile-button .username {
+    vertical-align: middle;
+    padding-left: 5px;
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+.profile-button i {
+    vertical-align: middle;
+    padding-right: 5px;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.menu-container {
+    position: fixed;
+    width: 12rem;
+    right: 25px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transition: 200ms ease;
+}
+
+.menu-container.active {
+    opacity: 1;
+}
+
+.menu-item {
+    width: 100%;
+}
+
+.button-nav .nav-link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    height: 3rem;
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: var(--transition-speed);
+}
+
+.button-nav .nav-link i {
+    position: relative;
+    margin: 0 0.5rem;
+    font-size: 1.1rem;
+}
+
+.button-nav .nav-link:hover {
+    background: #ff8c00;
+}

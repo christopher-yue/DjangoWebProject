@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <meta name = "viewport" content = "widht=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- IconScout CSS -->
+        <link rel = "stylesheet" href = "https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <!-- CSS -->
+        <link rel = "stylesheet" href = "{% static 'css/accounts.css' %}">
+
+        <title>{% block title %}OnlyMans{% endblock %}</title>
+    </head>
+    <body>
+        <div id = "content", name = "content">
+            <!--<a href = "/">Home</a>
+            <a href = "/posts/view_posts">Posts</a>
+            <a href = "/posts/add_post">Add Post</a>-->
+            {% block content %}<h1>Base</h1>{% endblock %}
+        </div>
+        <!-- JS -->
+        <script src = "{% static 'js/script.js' %}"></script>
+    </body>    
+</html>
