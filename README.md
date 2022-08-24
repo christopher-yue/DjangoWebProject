@@ -24,8 +24,8 @@
 
 ## Features
 
-Allows users to register, login, and view content connected to their profile
-Currently figuring out what I want to have my web application do
+- Allows users to register, login, and view content connected to their profile
+- Currently figuring out what I want to have my web application do
 
 ## Contact
 
